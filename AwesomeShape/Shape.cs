@@ -1,10 +1,7 @@
 ﻿namespace AwesomeShape
 {
-    public class Class1
+    public class Shape
     {
-        
-        public Class1() {
-            int i = 9;
-        }
+        public Shape() { }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShape", "AwesomeShape\AwesomeShape.csproj", "{22F712AB-9E30-45BA-91E7-DBC56444B30E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShapeDemo", "AwesomeShapeDemo\AwesomeShapeDemo.csproj", "{994FBD23-404A-42CF-B7AC-09C4732D418B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{22F712AB-9E30-45BA-91E7-DBC56444B30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22F712AB-9E30-45BA-91E7-DBC56444B30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22F712AB-9E30-45BA-91E7-DBC56444B30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{994FBD23-404A-42CF-B7AC-09C4732D418B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994FBD23-404A-42CF-B7AC-09C4732D418B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994FBD23-404A-42CF-B7AC-09C4732D418B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994FBD23-404A-42CF-B7AC-09C4732D418B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

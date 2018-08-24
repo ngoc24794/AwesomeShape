@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Media;
 
 namespace AwesomeShape
@@ -93,9 +92,9 @@ namespace AwesomeShape
             Geometry = GetGeomtry();
         }
 
-        private Geometry GetGeomtry()
+        protected virtual Geometry GetGeomtry()
         {
-            return new EllipseGeometry(new Rect(0, 0, Width, Height));
+            return Geometry.Empty;
         }
 
         protected virtual Pen GetPen()

@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Media;
 
-namespace AwesomeShape
+namespace AwesomeShape.Shapes
 {
     public abstract class Shape : DrawingVisual
     {
@@ -50,7 +50,7 @@ namespace AwesomeShape
         public static readonly DependencyProperty StrokeThicknessProperty =
             DependencyProperty.Register("StrokeThickness", typeof(double), typeof(Shape), new PropertyMetadata(0.0, AffectsRender));
 
-        private static void OnPropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        protected static void OnPropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             Shape shape = d as Shape;
             shape.BeforeDefiningGeometry();
@@ -58,7 +58,7 @@ namespace AwesomeShape
             shape.InvalidateVisual();
         }
 
-        private static void AffectsRender(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        protected static void AffectsRender(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             Shape shape = d as Shape;
             shape.InvalidateVisual();

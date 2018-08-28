@@ -5,6 +5,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using AwesomeShape;
+using AwesomeShape.Shapes;
 
 namespace AwesomeShapeDemo
 {
@@ -37,11 +38,12 @@ namespace AwesomeShapeDemo
 
         private Shape CreateShape(Container container)
         {
-            Shape shape = new Rectangle()
+            Shape shape = new StaticShape()
             {
                 Fill = Brushes.Green,
                 Stroke = Brushes.Red,
-                StrokeThickness = 5
+                StrokeThickness = 5,
+                Kind = AwesomeShape.Geometries.StaticShapeKind.Decagon
             };
 
             _container = new Container()
